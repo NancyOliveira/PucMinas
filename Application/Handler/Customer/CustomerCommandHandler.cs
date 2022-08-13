@@ -24,7 +24,6 @@ namespace Application.Handler.Customer
         {
             request.Document = request.Document.Replace(".", "").Replace("-", "");
 
-            bool a = await this._customerReader.ExistsAsync(request.Document);
             if (await this._customerReader.ExistsAsync(request.Document))
             {
                 throw new DuplicateDocumentException();
