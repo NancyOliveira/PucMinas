@@ -7,7 +7,7 @@ namespace Api.Documentation.Swagger.User
     {
         public object GetExamples()
         {
-            return new LoginCommand() { Login = "joao.silva", Password = "#odontopuc1" };
+            return new LoginCommand() { Login = "nancy.sousa", Password = "#odontopuc1" };
         }
     }
 }
