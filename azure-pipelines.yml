@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 variables:
   solution: '**/*.sln'
@@ -20,6 +20,13 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure para Estudantes Starter(c1466079-3f18-443f-924d-7555475301f2)'
+    appType: 'webAppLinux'
+    appName: 'odontopuc'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'DOTNETCORE|6.0'
 
 - task: VSBuild@1
   inputs:
