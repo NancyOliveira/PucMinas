@@ -86,5 +86,5 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_88D2D44A2EC9476992264D945F2CFDE0 }}
-          package: '"$(System.DefaultWorkingDirectory)\**\.net-app.zip"'
+          package: '**/.net-app.zip'
           artifactName: '.net-app' 
