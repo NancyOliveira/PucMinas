@@ -86,4 +86,4 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_88D2D44A2EC9476992264D945F2CFDE0 }}
-          package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/Api'
+          package: '$(Build.ArtifactStagingDirectory)/Api.zip'
