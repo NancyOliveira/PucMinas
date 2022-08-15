@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'odontopuc'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_99113D9F23E846AFAF7DF8AC54DC93AA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8501463CDAF349D1855E3F2362ECAF3E }}
           package: .
