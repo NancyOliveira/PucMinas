@@ -54,4 +54,4 @@ jobs:
           app-name: 'odontopuc'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8AAD666A0F974F77B4102583E63BD0AC }}
-          package: 'Api.sln'
+          package: '.'
